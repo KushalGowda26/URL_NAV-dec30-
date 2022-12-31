@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <style>
+        a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover
+        {
+            box-shadow: black;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>New Registration</h1>
+        <hr>
+        <div>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="First Name">First Name</label></td>
+                        <td><input type="text" placeholder="Firstname"></td>
+                        <td><label for="Last Name">Last Name</label></td>
+                        <td><input type="text" placeholder="Lastname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Course">Course</label></td>
+                        <td><input type="text" placeholder="Course name"></td>
+                        <td><label for="Batch code">Batch Code</label></td>
+                        <td><input type="text" placeholder="Batch code"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password"></td>
+                        <td><label for="confirm password"> Confirm Password</label></td>
+                        <td><input type="password" name="Confirm password" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="Submit"></td>
+                        <td><input type="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+            <footer>
+                <span>Click here for </span><a href="{% url 'kushal:contact_me' %}">Home Page</a></td>
+            </footer>
+        </div>
+    </center>
+</body>
+</html>
